@@ -217,9 +217,6 @@ from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import FileResponse
 import os
 
-app = FastAPI()
-
-
 @app.post("/uploadImage")
 async def upload_image(file: UploadFile = File(...)):
     try:
